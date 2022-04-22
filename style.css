@@ -1,0 +1,125 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(199, 175, 139);
+    background-color: rgb(111, 66, 66);
+    font-family: "Bangers", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    overflow: hidden;
+   
+}
+h1, h2, h3{
+    text-align: center;
+}
+img {
+    width: 125px;
+    height: 100px;
+}
+.screen,.selection__list, .game{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    transition: margin 0.5s ease-out;
+}
+.game {
+    justify-content: space-around;
+}
+.button {
+    cursor: pointer;
+    border-radius: 1.1em;
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+    background-color: rgb(199, 175, 139);
+    color: rgb(212, 194, 194);
+    border: 0.1em solid rgb(238, 209, 209);
+    font-family: inherit;
+    padding: 0.37em;
+}
+.button:hover {
+    opacity: 0.9;
+}
+.selection__list {
+    width: 80%;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.selection__list__item {
+    text-align: center;
+}
+.selection__list__img {
+    height: 120px;
+    transform: rotate(20deg);
+    cursor: pointer;
+
+}
+.selection__list__img:hover {
+    filter: invert(1) hue-rotate(180deg);
+
+}
+.up {
+    margin-top: -100vh;
+}
+
+.game__wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    position: absolute; 
+    top: 1%;
+}
+.game {
+    position: relative;
+}
+.game__message {
+    padding: 0.2em;
+    width: 100%;
+    line-height: 1.7;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 6%;
+    transition: transform 0.4s ease-out;
+} 
+
+.visible {
+    display: block;
+}
+
+.animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+   
+    width: 125px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(1);
+
+  
+}
+
+.animal img {
+    width: 116px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
