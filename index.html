@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catch French Bulldog or Cat</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main class="main-screen">
-        <div class="intro screen ">
-            <h1 class="title">Catch Animal</h1>
-            <button class="button">Play Game</button>
-        </div>
+      <div class="container">
+        <form action="#" class="form">
+          <label for="name">What is your name?</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name please"
+            required
+          />
+          <button type="button" class="button">Send</button>
+        </form>
+      </div>
 
+      <div class="intro screen">
+        <h1 class="title">Catch Animal</h1>
+        <button class="button">Play Game</button>
+      </div>
 
-        <div class="selection screen">
-            <h2>What is your favourite animal?</h2>
-            <ul class="selection__list">
-                <li class="selection__list__item">
-                    <p>French Bulldog</p>
-                    <img src="../PinClipart.com_french-bulldog-clip-art_4972788.png" alt="woof"
-                        class="selection__list__img">
-                </li>
-                <li class="selection__list__item">
-                    <p>Cat</p>
-                    <img src="kisspng-playstation-4-playstation-3-avatar-playstation-net-black-cat-5ac54ce5b27123.5243268815228797177309.png"
-                        alt="meow" class="selection__list__img">
-                </li>
-            </ul>
+      <div class="selection screen">
+        <h2>What is your favourite animal?</h2>
+        <ul class="selection__list">
+          <li class="selection__list__item">
+            <p>French Bulldog</p>
+            <img
+              src="../PinClipart.com_french-bulldog-clip-art_4972788.png"
+              alt="woof"
+              class="selection__list__img"
+            />
+          </li>
+          <li class="selection__list__item">
+            <p>Cat</p>
+            <img
+              src="kisspng-playstation-4-playstation-3-avatar-playstation-net-black-cat-5ac54ce5b27123.5243268815228797177309.png"
+              alt="meow"
+              class="selection__list__img"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="game screen">
+        <div class="game__wrapper">
+          <h3 class="game__time">Time: 00:00</h3>
+          <h3 class="game__score">Score : 0</h3>
         </div>
-        <div class="game screen">
-            <div class="game__wrapper">
-            <h3 class="game__time">Time: 00:00</h3>
-            <h3 class="game__score">Score : 0</h3>
-        </div>
-            <h3 class="game__message">Are you annoyed yet? <br>   You are playing an impossible game!</h3>
-
-            <!-- <div class="animal">
-                <img src="kisspng-playstation-4-playstation-3-avatar-playstation-net-black-cat-5ac54ce5b27123.5243268815228797177309.png" alt="meow">
-            </div> -->
-        </div>
+        <h3 class="game__message">
+          Are you annoyed yet? <br />
+          You are playing an impossible game!
+        </h3>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
