@@ -2,18 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  color: rgb(199, 175, 139);
-  background-color: rgb(111, 66, 66);
-  font-family: "Bangers", sans-serif;
+  color: rgb(26, 25, 24);
+  background-color: rgb(222, 192, 192);
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  letter-spacing: 0.3em;
   overflow: hidden;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
